@@ -64,4 +64,8 @@ def test_std7():
     exp = NotImplemented
     assert_equal(obs, exp)
 
+# Anubhav added test_float_in_mean
+def test_float_in_mean():
+    assert_almost_equal(mean([2.5,4.5,6.0]),4.3333333)
+
 # FIXME Put Variance tests here
